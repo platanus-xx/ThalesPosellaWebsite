@@ -1,14 +1,15 @@
 # Site settings
 name: Thales Posella
 description: "Professional Musician | Session Guitar Player"
-description2: "Site under remodeling... Enjoy the content on social networks bellow!"
+description2: "Get to know the music..."
+description3: "Site under remodeling... Enjoy the content on social networks bellow!"
 url: "www.thalesposella.com"
 
 
 # Delete the lines you don't need
 # about 5 elements are recomended
 github_username: platanus-xx
-facebook_username: thales_posella
+facebook_username: platanusmaple
 twitter_username: thales_posella
 youtube_username: thalesposella
 instagram_username: thales_posella
