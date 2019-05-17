@@ -21,7 +21,10 @@ permalink: /
     </head>
     <body>
         <div class="content">
-            {% if site.front_img %}
+			</br>
+			</br>
+			</br>
+			{% if site.front_img %}
             <img src="{{ site.front_img_path }}" id="fullscreen">
             {% endif %}
 
@@ -31,6 +34,7 @@ permalink: /
 
             <h1>{{ site.name }}</h1>
             <h3>{{ site.description }}</h3>
+            <h3>{{ site.description2 }}</h3>
                 <ul>
                     {% if site.youtube_username %}
                     <li><a class="fa fa-2x fa-youtube-play" href="https://www.youtube.com/{{ site.youtube_username }}" target="_blank"><span class="description">YouTube</span></a></li>
