@@ -3,13 +3,14 @@ name: Thales Posella
 description: "Site under Remodeling..."
 url: ""
 
+
 # Delete the lines you don't need
 # about 5 elements are recomended
-github_username:	platanus-xx
-facebook_username:	thales_posella
-twitter_username:	thales_posella
-#youtube_username:	platanusmaple
-instagram_username:	thales_posella
+github_username: platanus-xx
+facebook_username: thales_posella
+twitter_username: thales_posella
+#youtube_username: platanusmaple
+instagram_username: thales_posella
 blog_url: "/blog"
 email: platanus@gmail.com
 public_key_url: "https://raw.pastebin.com/LINK-TO-PUBLIC-KEY"
