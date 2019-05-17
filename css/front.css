@@ -20,7 +20,7 @@ body {
     left: 0;
 }
 #avatar {
-	padding-top: 60px;
+/*	padding-top: 60px;*/
     height: 180px;
     border-radius: 100%;
     border: 5px solid white;
@@ -28,7 +28,7 @@ body {
     margin-bottom: 40px;
 }
 #space {
-    margin-top: 10%;
+/*    margin-top: 10%;*/
 /*	margin-bottom: 20px;*/
 }
 h1 {
