@@ -20,7 +20,7 @@ body {
     left: 0;
 }
 #avatar {
-	padding-top: 40%;
+	margin-top: 70px;
     height: 180px;
     border-radius: 100%;
     border: 5px solid white;
