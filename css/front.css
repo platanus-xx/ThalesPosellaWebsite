@@ -147,4 +147,9 @@ a:hover {
 .content {
 /*    padding-top: 60px;*/
 }
+hr {
+    width: 30%;
+    margin-right: auto;
+    margin-left: auto;
+ }
 }
