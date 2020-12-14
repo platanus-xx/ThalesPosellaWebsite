@@ -27,6 +27,11 @@ body {
     margin-top: 40px;
     margin-bottom: 40px;
 }
+#mavens {
+    /*	padding-top: 60px;*/
+        height: 720px;
+        border: 1px solid white;
+    }
 #space {
 /*    margin-top: 10%;*/
 /*	margin-bottom: 20px;*/
