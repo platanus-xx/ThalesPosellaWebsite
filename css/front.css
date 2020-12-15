@@ -11,8 +11,8 @@ body {
 
 .container {
     position: relative;
-    width: 50%;
-    height: 0;
+    width: 60%;
+    /* height: 0; */
     padding-bottom: 56.25%;
 }
 .video {
