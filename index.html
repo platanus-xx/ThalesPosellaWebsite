@@ -229,7 +229,7 @@ permalink: /
             <li><a class="fa fa-2x fa-spotify" href="https://open.spotify.com/artist/2awEfAhaTrCLNHClsS5KKQ"
                     target="_blank"><span class="description">Spotify</span></a></li>
             <li><a class="fa fa-2x fa-apple"
-                    href="https://itunes.apple.com/br/album/the-seed-of-true-existence/1181892275?l=en"
+                    href="https://music.apple.com/br/artist/the-mavens-telescope/947243467"
                     target="_blank"><span class="description">Apple Music</span></a></li>
         </ul>
         </br>
@@ -238,19 +238,19 @@ permalink: /
         </br>
         <h3>Didn't find what you were looking for? More content on social media below!</h3>
         <ul>
-            {% if site.youtube_username %}
-            <li><a class="fa fa-2x fa-youtube-play" href="https://www.youtube.com/{{ site.youtube_username }}"
-                    target="_blank"><span class="description">YouTube</span></a></li>
+            {% if site.email %}
+            <li><a class="fa fa-2x fa-envelope" href="mailto:{{ site.email }}" target="_blank"><span
+                        class="description">Email</span></a></li>
             {% endif %}
-
+            
             {% if site.instagram_username %}
             <li><a class="fa fa-2x fa-instagram" href="https://instagram.com/{{ site.instagram_username }}"
                     target="_blank"><span class="description">Instagram</span></a></li>
             {% endif %}
 
-            {% if site.twitter_username %}
-            <li><a class="fa fa-2x fa-twitter" href="https://twitter.com/{{ site.twitter_username }}"
-                    target="_blank"><span class="description">Twitter</span></a></li>
+            {% if site.youtube_username %}
+            <li><a class="fa fa-2x fa-youtube-play" href="https://www.youtube.com/{{ site.youtube_username }}"
+                    target="_blank"><span class="description">YouTube</span></a></li>
             {% endif %}
 
             {% if site.facebook_username %}
@@ -258,11 +258,10 @@ permalink: /
                     target="_blank"><span class="description">Facebook</span></a></li>
             {% endif %}
 
-            {% if site.email %}
-            <li><a class="fa fa-2x fa-envelope" href="mailto:{{ site.email }}" target="_blank"><span
-                        class="description">Email</span></a></li>
+            {% if site.x_username %}
+            <li><a class="fa fa-2x fa-twitter" href="https://x.com/{{ site.x_username }}"
+                    target="_blank"><span class="description">X</span></a></li>
             {% endif %}
-
         </ul>
         <div id="space"></div>
     </div>
