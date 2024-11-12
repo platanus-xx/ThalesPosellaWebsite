@@ -1,0 +1,81 @@
+---
+title: The Mavens Telescope
+# layout: default
+permalink: /mavens/
+---
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>"{{ site.title }}"</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="shortcut icon" href="{{ site.mavens_favicon }}" />
+    <link rel="stylesheet" href="../css/front.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin' rel='stylesheet'
+        type='text/css'>
+
+</head>
+
+<body>
+    <div class="content">
+        {% if site.mavens_background_img %}
+        <img src="{{ site.mavens_background_path }}" id="fullscreen">
+        {% endif %}
+        <!-- <div id="space"></div> -->
+        <h1>{{ site.mavens_name }}</h1>
+        </br>
+        <h2>{{ site.mavens_description }}</h2>
+        </br></br>
+        <h4>New album comming soon...</br>Check the links below to save the date!</h4>
+        {% if site.mavens_endurance_img %}
+        <img src="{{ site.mavens_endurance_path }}" id="endurance">
+        {% endif %}
+        </br>
+        </br>
+        </br>
+        <ul>
+            <li><a class="fa fa-2x fa-spotify" href="https://open.spotify.com/artist/2awEfAhaTrCLNHClsS5KKQ"
+                    target="_blank"><span class="description">Spotify</span></a></li>
+            <li><a class="fa fa-2x fa-apple"
+                    href="https://music.apple.com/br/artist/the-mavens-telescope/947243467"
+                    target="_blank"><span class="description">Apple Music</span></a></li>
+        </ul>
+        </br>
+        </br>
+        <h3>Click below to download the Digital Booklet</h3>
+        <a href="/downloads/The Mavens Telescope - Endurance (Digital Booklet).pdf" target="_blank">Endurance Digital Booklet</a>
+        </br></br>
+        </br><hr />
+        </br>
+        <h3>More content on social media below!</h3>
+        <ul>
+            {% if site.email %}
+            <li><a class="fa fa-2x fa-envelope" href="mailto:{{ site.email }}" target="_blank"><span
+                        class="description">Email</span></a></li>
+            {% endif %}
+            
+            {% if site.mavens_insta_username %}
+            <li><a class="fa fa-2x fa-instagram" href="https://instagram.com/{{ site.mavens_insta_username }}"
+                    target="_blank"><span class="description">Instagram</span></a></li>
+            {% endif %}
+
+            {% if site.mavens_yt_username %}
+            <li><a class="fa fa-2x fa-youtube-play" href="https://www.youtube.com/@{{ site.mavens_yt_username }}"
+                    target="_blank"><span class="description">YouTube</span></a></li>
+            {% endif %}
+
+        </ul>
+        <div id="space"></div>
+    </div>
+    <footer>
+        <p>Author: Thales Posella<br>
+    </footer>
+
+</body>
+
+</html>
