@@ -34,7 +34,7 @@ mavens_background_img: yes
 mavens_logo: "../imgs/mavens_logo.png"
 mavens_background_path: "../imgs/mavens_background.png"
 mavens_name: The Mavens Telescope
-mavens_description: "Independent Rock Band"
+mavens_description: "Independent Rock"
 mavens_endurance_img: yes
 mavens_endurance_path: "../imgs/mavens_endurance.png"
 mavens_seeds_img: yes
