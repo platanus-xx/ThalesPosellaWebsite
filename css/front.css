@@ -18,8 +18,9 @@ footer {
 
 .container {
     position: relative;
-    width: 52%;
-    left:25%;
+    left: 25%;
+    right: 25%;
+    width: 50%;
 }
 
 .video {
@@ -83,6 +84,7 @@ h2 {
     font-size: 2em;
     font-family: 'Open Sans';
     margin: -10px 0;
+    padding-bottom: 20px;
 }
 
 h3 {
@@ -153,7 +155,12 @@ a {
 .description {
     display: none;
 }
-
+#spotify {
+    width:"100%";
+    left: 2%;
+    /* height:"352"; */
+    border-radius:12px
+}
 /* Mobile styles */
 @media (max-width: 768px) {
     #fullscreen {
@@ -169,6 +176,8 @@ a {
     }
     #album {
         width: 70%;
+        /* left: 5%; */
+        /* right: 5%; */
     }
     h2 {
         color: #bcbcbc;
@@ -218,6 +227,18 @@ a {
         padding-left: 30px;
         width: 70%;
     }
+    a:has(img) {
+        border: none;  /* Remove borders if <a> contains an <img> */
+    }
+    .link{
+        text-align: justify;
+        /* border: 2px solid white; */
+        border-radius: 5px;
+        color: white;
+        padding: 15px;
+        padding-left: 30px;
+        width: 70%;
+    }
 
     a:hover {
         -webkit-transition: 500ms;
@@ -234,8 +255,23 @@ a {
         font-family: Arial;
         margin-left: 40px;
     }
-
-    .content {
-        /*    padding-top: 60px;*/
+    
+    #spotify {
+        width:"100%";
+        left: 2%;
+        /* height:"352"; */
+        border-radius:12px
+    }
+    .container {
+        /* position: relative; */
+        /* left: 5%; */
+        width: 100%;
+        left: 0px;
+    }
+    .video {
+        position: relative;
+        top: 0;
+        /* align: center; */
+        width: 100%;
     }
 }

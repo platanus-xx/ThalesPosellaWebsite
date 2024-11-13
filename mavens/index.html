@@ -18,7 +18,6 @@ permalink: /mavens/
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin' rel='stylesheet'
         type='text/css'>
-
 </head>
 
 <body>
@@ -29,7 +28,7 @@ permalink: /mavens/
         <img src="{{ site.mavens_logo }}" id="mavens_logo">
         </br></br></br>
         <h2>{{ site.mavens_description }}</h2>
-        </br></br></br></br>
+        </br></br>
         <h4>The Mavens Telescope is an all-original Alternative/Prog/Rock project by Thales Posella and Beto Ferrari.</br>
             Our debut album, "The Seed of True Existence" was release in 2015.</br>
             The second album, "Endurance" will be out soon and the links will also be available below!</br>
@@ -37,7 +36,7 @@ permalink: /mavens/
         </h4>
         </br>
         <!--ENDURANCE-->
-        <h3>Endurance (coming soon...)</h3>
+        <h2>Endurance</br>(coming soon...)</h2>
         {% if site.mavens_endurance_img %}
         <img src="{{ site.mavens_endurance_path }}" id="album">
         {% endif %}
@@ -67,7 +66,7 @@ permalink: /mavens/
         </br><hr />
         </br></br></br>
         <!--Seeds-->
-        <h3>The Seed of True Existence</h3>
+        <h2>The Seed of True Existence</h2>
         {% if site.mavens_seeds_img %}
         <img src="{{ site.mavens_seeds_path }}" id="album">
         {% endif %}
@@ -82,17 +81,12 @@ permalink: /mavens/
                     target="_blank"><span class="description">Apple Music</span></a></li>
         </ul>
         </br>
-        <a href="/downloads/The Mavens Telescope - The Seed of True Existence (Digital Booklet).jpg" target="_blank">Download the Digital Booklet here</a>
+        <a href="/downloads/The Mavens Telescope - The Seed of True Existence (Digital Booklet).jpg" target="_blank">Download the Digital Booklet</a>
         </br></br></br>
         </br><hr />
         </br></br></br>
         <h3>More links below!</h3>
         <ul>
-            {% if site.email %}
-            <li><a class="fa fa-2x fa-envelope" href="mailto:{{ site.email }}" target="_blank"><span
-                        class="description">Email</span></a></li>
-            {% endif %}
-            
             {% if site.mavens_insta_username %}
             <li><a class="fa fa-2x fa-instagram" href="https://instagram.com/{{ site.mavens_insta_username }}"
                     target="_blank"><span class="description">Instagram</span></a></li>
@@ -102,7 +96,11 @@ permalink: /mavens/
             <li><a class="fa fa-2x fa-youtube-play" href="https://www.youtube.com/@{{ site.mavens_yt_username }}"
                     target="_blank"><span class="description">YouTube</span></a></li>
             {% endif %}
-
+            {% if site.email %}
+            <li><a class="fa fa-2x fa-envelope" href="mailto:{{ site.email }}" target="_blank"><span
+                        class="description">Email</span></a></li>
+            {% endif %}
+            
         </ul>
         <div id="space"></div>
     </div>
