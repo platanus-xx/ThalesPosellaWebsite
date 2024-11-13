@@ -46,6 +46,12 @@ footer {
     margin-bottom: 40px;
 }
 
+#album {
+    width: 25%;
+    border: 2px solid white;
+    border-radius: 16px;
+}
+
 #mavens {
     width: 100%;
     /* border: 2px solid white; */
@@ -94,6 +100,16 @@ h4 {
 
 .content {
     padding-top: 10%;
+    padding-bottom: 90%;
+    /*	height:auto;*/
+    height: auto;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.content_mavens {
+    padding-top: 5%;
     padding-bottom: 90%;
     /*	height:auto;*/
     height: auto;
