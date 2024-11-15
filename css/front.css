@@ -47,6 +47,14 @@ footer {
     margin-bottom: 40px;
 }
 
+#mavens_avatar {
+    width: 50%;
+    border-radius: 1%;
+    border: 2px solid white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 #album {
     width: 25%;
     border: 2px solid white;
