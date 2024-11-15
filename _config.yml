@@ -42,3 +42,5 @@ mavens_seeds_path: "../imgs/mavens_seeds.jpg"
 mavens_favicon: "../imgs/mavens_favicon.png"
 mavens_yt_username: MavensTelescope
 mavens_insta_username: mavenstelescope
+mavens_avatar: yes
+mavens_avatar_img_path: "../imgs/mavens_avatar.jpg"
