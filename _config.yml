@@ -44,3 +44,8 @@ mavens_yt_username: MavensTelescope
 mavens_insta_username: mavenstelescope
 mavens_avatar: yes
 mavens_avatar_img_path: "../imgs/mavens_avatar.jpg"
+mavens_promo1: "../imgs/mavens_promo1.jpg"
+mavens_promo2: "../imgs/mavens_promo2.jpg"
+mavens_promo3: "../imgs/mavens_promo3.jpg"
+mavens_promo4: "../imgs/mavens_promo4.jpg"
+mavens_promo5: "../imgs/mavens_promo5.jpg"
