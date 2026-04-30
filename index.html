@@ -2,233 +2,210 @@
 permalink: /
 ---
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>"{{ site.title }}"</title>
+    <title>{{ site.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     {% if site.favicon_img %}
-    <link rel="shortcut icon" href="{{ site.favicon_img_path }}" />
+    <link rel="shortcut icon" href="{{ site.favicon_img_path }}">
     {% endif %}
-    <!-- <link rel="stylesheet" href="{{ "/css/front.css" | prepend: site.baseurl }}"> -->
     <link rel="stylesheet" href="/css/front.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin' rel='stylesheet'
-        type='text/css'>
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin" rel="stylesheet">
 </head>
 
-<body>
-    <div class="content">
-        {% if site.front_img %}
-        <img src="{{ site.front_img_path }}" id="fullscreen">
-        {% endif %}
-        <div id="space"></div>
-        {% if site.avatar %}
-        <img src="{{ site.avatar_img_path }}" id="avatar">
-        {% endif %}
-        <h1>{{ site.name }}</h1>
-        </br>
-        <h2>{{ site.description }}</h2>
-        </br>
-        <h4>This is a portfolio website where you can see some of my work as a musician, composer, session
-            player and mixing engineer</br>Some recording information can be found below the videos.</h4>
-        </br>
-        </br>
-        </br>
-        </br></br>
-        <h3>The Mavens Telescope</h3>
-        <h4>Click below to get to know more...</h4>
-        <nav>
-            <a href="/mavens/" class="link">
-            <img src="{{ site.mavens_endurance_path }}" alt="The Mavens Telescope" id="album">
+<body class="site home-site">
+    {% if site.front_img %}
+    <img src="{{ site.front_img_path }}" alt="" class="background-image">
+    {% endif %}
+
+    <header class="hero">
+        <div class="hero-inner">
+            {% if site.avatar %}
+            <img src="{{ site.avatar_img_path }}" alt="Thales Posella" class="avatar">
+            {% endif %}
+            <p class="eyebrow">Portfolio</p>
+            <h1>{{ site.name }}</h1>
+            <p class="subtitle">{{ site.description }}</p>
+            <p class="intro">A selected collection of releases and sessions as a musician, composer, producer, session player, and mixing engineer.</p>
+            <nav class="hero-actions" aria-label="Primary links">
+                <a href="#work" class="button primary">Studio Work</a>
+                <a href="/mavens/" class="button secondary">The Mavens Telescope</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="feature-section">
+            <div class="section-heading">
+                <p class="eyebrow">Featured Project</p>
+                <h2>The Mavens Telescope</h2>
+                <p>Progressive and alternative rock project with albums, artwork, booklets, and streaming links.</p>
+            </div>
+            <a href="/mavens/" class="feature-link" aria-label="Open The Mavens Telescope page">
+                <img src="{{ site.mavens_endurance_path }}" alt="The Mavens Telescope - Endurance album cover" class="album-cover">
             </a>
-        </nav>
-        </br></br></br></br>
-        <hr />
-        </br>
-        </br>
-        <h3>Border Radio | Neil Nathan</h3>
-        <div class="container">
-            <iframe src="https://open.spotify.com/embed/track/0tCdlAUgEJykjwWVPIBE5S?utm_source=generator&theme=0" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" id="spotify"></iframe>
-        </div>
-        </br>
-        <h4>"This song references the mid-20th century US-Mexico border stations that blasted classic country across the Americas. Johnny Cash and Waylon Jennings grew up listening, and Wolfman Jack got his start there too!" --Neil Nathan</br></br>
-            Vocals | Neil Nathan</br>
-            Acoustic Guitars | Thales Posella</br>
-            Electric Guitars | Thales Posella</br>
-            Piano | Thales Posella</br>
-            Banjo | Thales Posella</br>
-            Percussion | Thales Posella</br></br>
-            Production and Arrangement | Thales Posella and Neil Nathan</br>
-            Mix | Thales Posella</br>
-            Master | @timothy_stollenwerk</h4>
-        </br>
-        <hr />
-        </br>
-        </br>
-        <h3>Be Still My Ever Beaten Heart | Neil Nathan</h3>
-        <div class="container">
-            <iframe src="//www.youtube.com/embed/_2qQFZ-YkNA" frameborder="0" allowfullscreen class="video"></iframe>
-        </div>
-        </br>
-        <h4>Be Still My Ever Beaten Heart is about that scary moment just before one risks trusting another and opens themselves up to potential heartbreak.</br></br>
-            Vocals | Neil Nathan</br>
-            Guitars | Thales Posella</br>
-            Synth Strings | Thales Posella</br>
-            Percussion | Thales Posella</br>
-            Bass | Pemberton Roach</br>
-            Drums | Beto Ferrari</br></br>
-            Production and Arrangement | Thales Posella and Neil Nathan</br>
-            Mix | Thales Posella</br>
-            Master | @timothy_stollenwerk</h4>
-        </br>
-        <hr />
-        </br>
-        </br>
-        <h3>The Guardrail | Neil Nathan</h3>
-        <div class="container">
-            <iframe src="//www.youtube.com/embed/hac1_HTQrKg" frameborder="0" allowfullscreen class="video"></iframe>
-        </div>
-        </br>
-        <h4>Neil lost a lifelong friend on 9/11. He wrote this tribute song for the 20th anniversary.</br></br>
-            Vocals | Neil Nathan</br>
-            Acoustic guitars | Thales Posella</br>
-            Piano | Thales Posella</br>
-            Hammond | Thales Posella</br>
-            Harmonica | @studio1935philadelphia</br></br>
-            Production and Arrangement | Thales Posella and Neil Nathan</br>
-            Mix | Thales Posella</br>
-            Master | @timothy_stollenwerk</h4>
-        </br>
-        <hr />
-        </br>
-        </br>
-        <h3>Superman Song | Crash Test Dummies (Acoustic by Thales Posella)</h3>
-        <div class="container">
-            <iframe src="//www.youtube.com/embed/9jutnDpsmFU?si=faxCVnFs4Tdopsvc" frameborder="0" allowfullscreen class="video"></iframe>
-        </div>
-        </br>
-        <h4>This is just an acoustic arrangement for this awesome song.</h4>
-        </br>
-        <hr />
-        </br>
-        </br>
-        <h3>Please be Well | Neil Nathan</h3>
-        <div class="container">
-            <iframe src="//www.youtube.com/embed/m09_ZAumCSo" frameborder="0" allowfullscreen class="video"></iframe>
-        </div>
-        </br>
-        <h4>Vocals | Neil Nathan</br>
-            Acoustic guitars | Thales Posella</br>
-            Piano | Thales Posella</br>
-            Virtual instruments | Thales Posella</br>
-            Steel | Mike Brenner</br></br>
-            Production and Arrangement | Thales Posella and Neil Nathan</br>
-            Mix | Thales Posella</br>
-            Master | Thales Posella</h4>
-        </br>
-        <hr />
-        </br>
-        </br>
-        <h3>Silver Angel | Ivan Busic</h3>
-        <div class="container">
-            <iframe src="//www.youtube.com/embed/kQcwBS50bYo" frameborder="0" allowfullscreen class="video"></iframe>
-        </div>
-        </br>
-        <h4>Vocals | Ivan Busic</br>
-            Drums | Ivan Busic</br>
-            Bass | Andria Busic</br>
-            Rhythm acoustic guitars | Thales Posella</br>
-            Piano | Thales Posella</br>
-            Virtual instruments | Thales Posella</br>
-            Percussion | Thales Posella</br>
-            Backup vocals | Thales Posella and Marco Bavini</br>
-            Acoustic guitar melody | Marco Bavini</br></br>
-            Production and Arrengement | Thales Posella</br>
-            Mix | Thales Posella</br>
-            Master | Thales Posella</h4>
-        </br>
-        <hr />
-        </br>
-        </br>
-        <h3>Nothing Else Matters | Metallica (Piano version by Thales Posella & Eduardo Deberaldini)</h3>
-        <div class="container">
-            <iframe src="//www.youtube.com/embed/UpCvzffHpio" frameborder="0" allowfullscreen class="video"></iframe>
-        </div>
-        </br>
-        <h4>This was a sad but beautiful project I've recorded as a tribute to the passing of a very close
-            friend, Eduardo Deberaldini.</br></br>
-            Vocals | Thales Posella</br>
-            Piano | Thales Posella</br>
-            Virtual instruments | Thales Posella</br>
-            Electric guitars | Eduardo Deberaldini</br></br>
-            Production and Arrengement | Thales Posella</br>
-            Mix | Thales Posella</br>
-            Master | Thales Posella</h4>
-        </br>
-        <hr />
-        </br>
-        </br>
-        <h3>Klimbim | Don Ross (Cover by Thales Posella)</h3>
-        <div class="container">
-            <iframe src="//www.youtube.com/embed/PECvckxGg90" frameborder="0" allowfullscreen class="video"></iframe>
-        </div>
-        </br>
-        <h4>This is a cover from a beautiful song by Don Ross.</br>It features a Blueridge guitar with 2 large
-            diaphragm condensers.</h4>
-        </br>
-        <hr />
-        </br>
-        </br>
-        <h3>M.A.T. | Thales Posella</h3>
-        <div class="container">
-            <iframe src="//www.youtube.com/embed/D0436K7POrQ" frameborder="0" allowfullscreen class="video"></iframe>
-        </div>
-        </br>
-        <h4>This features a custom Strat straight into a Mesa Boogie
-            Mark IV going into a Laney 4x12-v30s
-            cabinet.</br>Mic setup was one sm57 On-center, another SM57 Off-center and a MD421 On-center.
-        </h4>
-        </br>
-        <hr />
-        <h3>Didn't find what you were looking for? More content on social media below!</h3>
-        <ul>
+        </section>
+
+        <section id="work" class="work-section">
+            <div class="section-heading">
+                <p class="eyebrow">Selected Work</p>
+                <h2>Videos, Songs, and Session Credits</h2>
+            </div>
+
+            <article class="work-item">
+                <div class="media-frame spotify-frame">
+                    <iframe src="https://open.spotify.com/embed/track/0YRuJzTuq06oONtHUw3r6m?utm_source=generator&theme=0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Back Where I Belong by Neil Nathan on Spotify"></iframe>
+                </div>
+                <div class="work-copy">
+                    <p class="eyebrow">Neil Nathan</p>
+                    <h3>Back Where I Belong</h3>
+                    <p class="credits">Vocals: Neil Nathan</br>Guitars, Organ, Percussion: Thales Posella</br>Harmonica: Trent Williamson</br>Lap Steel Guitar: Mike Slo-Mo Brenner</br>Bass: Pemberton Roach</br>Drums: Beto Ferrari</br>Production: Neil Nathan & Thales Posella</br>Mix: Thales Posella</br>Master: Timothy Stollenwerk</p>
+                </div>
+            </article>
+
+            <article class="work-item">
+                <div class="media-frame spotify-frame">
+                    <iframe src="https://open.spotify.com/embed/track/0tCdlAUgEJykjwWVPIBE5S?utm_source=generator&theme=0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Border Radio by Neil Nathan on Spotify"></iframe>
+                </div>
+                <div class="work-copy">
+                    <p class="eyebrow">Neil Nathan</p>
+                    <h3>Border Radio</h3>
+                    <p>This song references the mid-20th century US-Mexico border stations that blasted classic country across the Americas.</p>
+                    <p class="credits">Vocals: Neil Nathan<br>Acoustic Guitars, Electric Guitars, Piano, Banjo, Percussion: Thales Posella<br>Production and Arrangement: Thales Posella and Neil Nathan<br>Mix: Thales Posella<br>Master: @timothy_stollenwerk</p>
+                </div>
+            </article>
+
+            <article class="work-item">
+                <div class="media-frame">
+                    <iframe src="https://www.youtube.com/embed/_2qQFZ-YkNA" allowfullscreen loading="lazy" title="Be Still My Ever Beaten Heart by Neil Nathan"></iframe>
+                </div>
+                <div class="work-copy">
+                    <p class="eyebrow">Neil Nathan</p>
+                    <h3>Be Still My Ever Beaten Heart</h3>
+                    <p>About the moment just before one risks trusting another and opens themselves up to potential heartbreak.</p>
+                    <p class="credits">Vocals: Neil Nathan<br>Guitars, Synth Strings, Percussion: Thales Posella<br>Bass: Pemberton Roach<br>Drums: Beto Ferrari<br>Production and Arrangement: Thales Posella and Neil Nathan<br>Mix: Thales Posella<br>Master: @timothy_stollenwerk</p>
+                </div>
+            </article>
+
+            <article class="work-item">
+                <div class="media-frame">
+                    <iframe src="https://www.youtube.com/embed/hac1_HTQrKg" allowfullscreen loading="lazy" title="The Guardrail by Neil Nathan"></iframe>
+                </div>
+                <div class="work-copy">
+                    <p class="eyebrow">Neil Nathan</p>
+                    <h3>The Guardrail</h3>
+                    <p>Neil lost a lifelong friend on 9/11 and wrote this tribute song for the 20th anniversary.</p>
+                    <p class="credits">Vocals: Neil Nathan<br>Acoustic Guitars, Piano, Hammond: Thales Posella<br>Harmonica: @studio1935philadelphia<br>Production and Arrangement: Thales Posella and Neil Nathan<br>Mix: Thales Posella<br>Master: @timothy_stollenwerk</p>
+                </div>
+            </article>
+
+            <article class="work-item">
+                <div class="media-frame">
+                    <iframe src="https://www.youtube.com/embed/9jutnDpsmFU?si=faxCVnFs4Tdopsvc" allowfullscreen loading="lazy" title="Superman Song acoustic arrangement by Thales Posella"></iframe>
+                </div>
+                <div class="work-copy">
+                    <p class="eyebrow">Crash Test Dummies Cover</p>
+                    <h3>Superman Song</h3>
+                    <p>An acoustic arrangement by Thales Posella.</p>
+                </div>
+            </article>
+
+            <article class="work-item">
+                <div class="media-frame">
+                    <iframe src="https://www.youtube.com/embed/m09_ZAumCSo" allowfullscreen loading="lazy" title="Please be Well by Neil Nathan"></iframe>
+                </div>
+                <div class="work-copy">
+                    <p class="eyebrow">Neil Nathan</p>
+                    <h3>Please be Well</h3>
+                    <p class="credits">Vocals: Neil Nathan<br>Acoustic Guitars, Piano, Virtual Instruments: Thales Posella<br>Steel: Mike Brenner<br>Production and Arrangement: Thales Posella and Neil Nathan<br>Mix and Master: Thales Posella</p>
+                </div>
+            </article>
+
+            <article class="work-item">
+                <div class="media-frame">
+                    <iframe src="https://www.youtube.com/embed/kQcwBS50bYo" allowfullscreen loading="lazy" title="Silver Angel by Ivan Busic"></iframe>
+                </div>
+                <div class="work-copy">
+                    <p class="eyebrow">Ivan Busic</p>
+                    <h3>Silver Angel</h3>
+                    <p class="credits">Vocals and Drums: Ivan Busic<br>Bass: Andria Busic<br>Rhythm Acoustic Guitars, Piano, Virtual Instruments, Percussion, Backup Vocals: Thales Posella<br>Acoustic Guitar Melody, Backup Vocals: Marco Bavini<br>Production and Arrangement, Mix, Master: Thales Posella</p>
+                </div>
+            </article>
+
+            <article class="work-item">
+                <div class="media-frame">
+                    <iframe src="https://www.youtube.com/embed/UpCvzffHpio" allowfullscreen loading="lazy" title="Nothing Else Matters piano version by Thales Posella and Eduardo Deberaldini"></iframe>
+                </div>
+                <div class="work-copy">
+                    <p class="eyebrow">Metallica Cover</p>
+                    <h3>Nothing Else Matters</h3>
+                    <p>A piano version recorded as a tribute to Eduardo Deberaldini.</p>
+                    <p class="credits">Vocals, Piano, Virtual Instruments: Thales Posella<br>Electric Guitars: Eduardo Deberaldini<br>Production and Arrangement, Mix, Master: Thales Posella</p>
+                </div>
+            </article>
+
+            <article class="work-item">
+                <div class="media-frame">
+                    <iframe src="https://www.youtube.com/embed/PECvckxGg90" allowfullscreen loading="lazy" title="Klimbim cover by Thales Posella"></iframe>
+                </div>
+                <div class="work-copy">
+                    <p class="eyebrow">Don Ross Cover</p>
+                    <h3>Klimbim</h3>
+                    <p>A cover of a beautiful song by Don Ross, featuring a Blueridge guitar with two large diaphragm condensers.</p>
+                </div>
+            </article>
+
+            <article class="work-item">
+                <div class="media-frame">
+                    <iframe src="https://www.youtube.com/embed/CTkCKKGeXR4" allowfullscreen loading="lazy" title="Studio work video by Thales Posella"></iframe>
+                </div>
+                <div class="work-copy">
+                    <p class="eyebrow">Thales Posella</p>
+                    <h3>Another Day (Solo)</h3>
+                    <p>A tribute to this amazing guitar solo by John Petrucci.</p>
+                </div>
+            </article>
+
+            <article class="work-item">
+                <div class="media-frame">
+                    <iframe src="https://www.youtube.com/embed/D0436K7POrQ" allowfullscreen loading="lazy" title="M.A.T. by Thales Posella"></iframe>
+                </div>
+                <div class="work-copy">
+                    <p class="eyebrow">Thales Posella</p>
+                    <h3>M.A.T.</h3>
+                    <p>Custom Strat into a Mesa Boogie Mark IV and Laney 4x12 V30s cabinet, captured with two SM57s and an MD421.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <h2>More content on social media</h2>
+        <ul class="social-links">
             {% if site.instagram_username %}
-            <li><a class="fa fa-2x fa-instagram" href="https://instagram.com/{{ site.instagram_username }}"
-                    target="_blank"><span class="description">Instagram</span></a></li>
+            <li><a class="fa fa-instagram" href="https://instagram.com/{{ site.instagram_username }}" target="_blank" rel="noopener"><span>Instagram</span></a></li>
             {% endif %}
-
             {% if site.youtube_username %}
-            <li><a class="fa fa-2x fa-youtube-play" href="https://www.youtube.com/{{ site.youtube_username }}"
-                    target="_blank"><span class="description">YouTube</span></a></li>
+            <li><a class="fa fa-youtube-play" href="https://www.youtube.com/{{ site.youtube_username }}" target="_blank" rel="noopener"><span>YouTube</span></a></li>
             {% endif %}
-
             {% if site.facebook_username %}
-            <li><a class="fa fa-2x fa-facebook" href="https://facebook.com/{{ site.facebook_username }}"
-                    target="_blank"><span class="description">Facebook</span></a></li>
+            <li><a class="fa fa-facebook" href="https://facebook.com/{{ site.facebook_username }}" target="_blank" rel="noopener"><span>Facebook</span></a></li>
             {% endif %}
-
             {% if site.x_username %}
-            <li><a class="fa fa-2x fa-twitter" href="https://x.com/{{ site.x_username }}"
-                    target="_blank"><span class="description">X</span></a></li>
+            <li><a class="fa fa-twitter" href="https://x.com/{{ site.x_username }}" target="_blank" rel="noopener"><span>X</span></a></li>
             {% endif %}
             {% if site.email %}
-            <li><a class="fa fa-2x fa-envelope" href="mailto:{{ site.email }}" target="_blank"><span
-                        class="description">Email</span></a></li>
+            <li><a class="fa fa-envelope" href="mailto:{{ site.email }}"><span>Email</span></a></li>
             {% endif %}
-            
         </ul>
-        <div id="space"></div>
-    </div>
-    <footer>
-        <p>Author: Thales Posella<br>
+        <p>Author: Thales Posella</p>
     </footer>
-
 </body>
 
 </html>

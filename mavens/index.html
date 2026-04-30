@@ -1,109 +1,128 @@
 ---
 title: The Mavens Telescope
-# layout: default
 permalink: /mavens/
 ---
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>"{{ site.title }}"</title>
+    <title>{{ page.title }} | {{ site.name }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ site.description }}">
+    <meta name="description" content="{{ site.mavens_description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="shortcut icon" href="{{ site.mavens_favicon }}" />
-    <link rel="stylesheet" href="../css/front.css">
+    <link rel="shortcut icon" href="{{ site.mavens_favicon }}">
+    <link rel="stylesheet" href="/css/front.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin' rel='stylesheet'
-        type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin" rel="stylesheet">
 </head>
 
-<body>
-    <div class="content_mavens">
-        {% if site.mavens_background_img %}
-        <img src="{{ site.mavens_background_path }}" id="fullscreen">
-        {% endif %}
-        <img src="{{ site.mavens_logo }}" id="mavens_logo">
-        </br></br>
-        {% if site.mavens_avatar %}
-        <img src="{{ site.mavens_avatar_img_path }}" id="mavens_avatar">
-        {% endif %}</br>
-        <!-- <h2>{{ site.mavens_description }}</h2> -->
-        <!-- </br></br> -->
-        <h4>After nearly a decade, The Mavens Telescope is back with Endurance, an album exploring deep philosophical themes through progressive and alternative rock.</br>
-            Formed in 2013 in Brazil by Thales Posella, Beto Ferrari and Jonas Ariel, The Mavens Telescope made their first appearance</br>
-            on the progressive and alternative rock independent scene with their 2015 debut, The Seed of True Existence, featuring Marcio Herzer on bass.</br></br>
-            Following a hiatus, Thales and Beto revived the project in 2020, reuniting with Herzer to craft Endurance, which was released on March 25th, 2025.</br>
-            The album showcases The Mavens Telescope’s signature mix of atmospheric textures, powerful melodies, and thought-provoking storytelling.</br></br>
-            All essential links are below. Enjoy the journey.
-        </h4>
-        <hr/>
-        </br></br>
-        <!--ENDURANCE-->
-        <h2>Endurance</h2>
-        {% if site.mavens_endurance_img %}
-        <img src="{{ site.mavens_endurance_path }}" id="album">
-        {% endif %}
-        </br></br></br>
-        <a href="https://mavens.fanlink.tv/endurance" target="_blank" 
-            style="display: inline-block; text-align: center; padding: 10px 20px; border-radius: 25px; background-color: #29889c;  color: #ffff; text-decoration: none; font-weight: bold; transition: background 0.3s;"
-            onmouseover="this.style.backgroundColor='#38b2b3';"
-            onmouseout="this.style.backgroundColor='#29889c';">
-            Listen Now!
-        </a>
-        </br></br>
-        <a href="/downloads/The Mavens Telescope - Endurance (Digital Booklet).pdf" target="_blank">Download the Digital Booklet</a>
-        </br></br></br></br>
-        <hr />
-        </br></br></br></br>
-        <!--Seeds-->
-        <h2>The Seed of True Existence</h2>
-        {% if site.mavens_seeds_img %}
-        <img src="{{ site.mavens_seeds_path }}" id="album">
-        {% endif %}
-        </br></br></br>
-        <a href="https://mavens.fanlink.tv/seed" target="_blank" 
-            style="display: inline-block; text-align: center; padding: 10px 20px; border-radius: 25px; background-color: #f1845e;  color: #ffff; text-decoration: none; font-weight: bold; transition: background 0.3s;"
-            onmouseover="this.style.backgroundColor='#f2a268';"
-            onmouseout="this.style.backgroundColor='#f1845e';">
-            Listen Now!
-        </a>
-        </br></br>
-        <a href="/downloads/The Mavens Telescope - The Seed of True Existence (Digital Booklet).jpg" target="_blank">Download the Digital Booklet</a>
-        </br></br></br></br>
-        <hr />
-        </br></br></br></br>
-        <img src="{{ site.mavens_promo1 }}" id="album">
-        <img src="{{ site.mavens_promo2 }}" id="album">
-        <img src="{{ site.mavens_promo3 }}" id="album">
-        <img src="{{ site.mavens_promo4 }}" id="album">
-        <img src="{{ site.mavens_promo5 }}" id="album">
-        </br></br></br></br>
-        <hr />
-        </br></br>
-        <ul>
-            {% if site.mavens_insta_username %}
-            <li><a class="fa fa-2x fa-instagram" href="https://instagram.com/{{ site.mavens_insta_username }}"
-                    target="_blank"><span class="description">Instagram</span></a></li>
-            {% endif %}
+<body class="site mavens-site">
+    {% if site.mavens_background_img %}
+    <img src="{{ site.mavens_background_path }}" alt="" class="background-image">
+    {% endif %}
 
+    <header class="hero mavens-hero">
+        <div class="hero-inner">
+            <img src="{{ site.mavens_logo }}" alt="The Mavens Telescope" class="mavens-logo">
+            {% if site.mavens_avatar %}
+            <img src="{{ site.mavens_avatar_img_path }}" alt="The Mavens Telescope band photo" class="band-photo">
+            {% endif %}
+            <p class="intro">Alternative Prog-Rock Band. Explore the music below.</p>
+            <nav class="hero-actions" aria-label="Album links">
+                <a href="#endurance" class="button primary">Endurance</a>
+                <a href="#seed" class="button secondary">The Seed of True Existence</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="story-section">
+            <div class="section-heading">
+                <p class="eyebrow">About the Project</p>
+                <h1>The Mavens Telescope</h1>
+            </div>
+            <div class="prose">
+                <p>After nearly a decade, The Mavens Telescope returned with <em>Endurance</em>, an album exploring deep philosophical themes through progressive and alternative rock.</p>
+                <p>Formed in 2013 in Brazil by Thales Posella, Beto Ferrari, and Jonas Ariel, The Mavens Telescope made their first appearance on the independent progressive and alternative rock scene with their 2015 debut, <em>The Seed of True Existence</em>, featuring Marcio Herzer on bass.</p>
+                <p>Following a hiatus, Thales and Beto revived the project in 2020, reuniting with Herzer to craft <em>Endurance</em>, released on March 25, 2025.</p>
+            </div>
+        </section>
+
+        <section class="album-section" id="endurance">
+            <div class="album-layout">
+                {% if site.mavens_endurance_img %}
+                <img src="{{ site.mavens_endurance_path }}" alt="Endurance album cover" class="album-cover large">
+                {% endif %}
+                <div class="album-copy">
+                    <p class="eyebrow">Album</p>
+                    <h2>Endurance</h2>
+                    <p>The newest chapter from The Mavens Telescope.</p>
+                    <div class="button-row">
+                        <a href="https://mavens.fanlink.tv/endurance" target="_blank" rel="noopener" class="button primary">Listen Now</a>
+                        <a href="/downloads/The Mavens Telescope - Endurance (Digital Booklet).pdf" target="_blank" rel="noopener" class="button secondary">Digital Booklet</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="album-section" id="seed">
+            <div class="album-layout reverse">
+                {% if site.mavens_seeds_img %}
+                <img src="{{ site.mavens_seeds_path }}" alt="The Seed of True Existence album cover" class="album-cover large">
+                {% endif %}
+                <div class="album-copy">
+                    <p class="eyebrow">Album</p>
+                    <h2>The Seed of True Existence</h2>
+                    <p>The 2015 debut album.</p>
+                    <div class="button-row">
+                        <a href="https://mavens.fanlink.tv/seed" target="_blank" rel="noopener" class="button primary warm">Listen Now</a>
+                        <a href="/downloads/The Mavens Telescope - The Seed of True Existence (Digital Booklet).jpg" target="_blank" rel="noopener" class="button secondary">Digital Booklet</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div class="section-heading">
+                <p class="eyebrow">Gallery</p>
+                <h2>Promo Photos</h2>
+            </div>
+            <div class="photo-grid">
+                <a href="{{ site.mavens_promo1 }}" target="_blank" rel="noopener">
+                    <img src="{{ site.mavens_promo1 }}" alt="The Mavens Telescope promo photo 1">
+                </a>
+                <a href="{{ site.mavens_promo2 }}" target="_blank" rel="noopener">
+                    <img src="{{ site.mavens_promo2 }}" alt="The Mavens Telescope promo photo 2">
+                </a>
+                <a href="{{ site.mavens_promo3 }}" target="_blank" rel="noopener">
+                    <img src="{{ site.mavens_promo3 }}" alt="The Mavens Telescope promo photo 3">
+                </a>
+                <a href="{{ site.mavens_promo4 }}" target="_blank" rel="noopener">
+                    <img src="{{ site.mavens_promo4 }}" alt="The Mavens Telescope promo photo 4">
+                </a>
+                <a href="{{ site.mavens_promo5 }}" target="_blank" rel="noopener">
+                    <img src="{{ site.mavens_promo5 }}" alt="The Mavens Telescope promo photo 5">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <ul class="social-links">
+            {% if site.mavens_insta_username %}
+            <li><a class="fa fa-instagram" href="https://instagram.com/{{ site.mavens_insta_username }}" target="_blank" rel="noopener"><span>Instagram</span></a></li>
+            {% endif %}
             {% if site.mavens_yt_username %}
-            <li><a class="fa fa-2x fa-youtube-play" href="https://www.youtube.com/@{{ site.mavens_yt_username }}"
-                    target="_blank"><span class="description">YouTube</span></a></li>
+            <li><a class="fa fa-youtube-play" href="https://www.youtube.com/@{{ site.mavens_yt_username }}" target="_blank" rel="noopener"><span>YouTube</span></a></li>
             {% endif %}
             {% if site.email %}
-            <li><a class="fa fa-2x fa-envelope" href="mailto:{{ site.email }}" target="_blank"><span
-                        class="description">Email</span></a></li>
+            <li><a class="fa fa-envelope" href="mailto:{{ site.email }}"><span>Email</span></a></li>
             {% endif %}
         </ul>
-        <div id="space"></div>
-    </div>
-    <footer>
-        <p>Created by Thales Posella<br>
+        <p>Created by Thales Posella</p>
     </footer>
-
 </body>
 
 </html>
