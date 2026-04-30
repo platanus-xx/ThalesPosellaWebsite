@@ -541,6 +541,10 @@ main {
         width: 100%;
     }
 
+    .hero-actions .fa-external-link {
+        margin-left: 0.45em;
+    }
+
     .feature-section,
     .story-section,
     .album-section,
