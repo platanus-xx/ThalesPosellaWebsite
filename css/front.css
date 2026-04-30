@@ -185,6 +185,10 @@ h3 {
     background: rgba(255, 255, 255, 0.07);
 }
 
+.hero-actions .fa-external-link {
+    margin-left: 0.45em;
+}
+
 .home-site .hero-actions .button.primary {
     border-color: var(--line);
     background: rgba(255, 255, 255, 0.07);
